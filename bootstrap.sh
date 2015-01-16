@@ -6,18 +6,14 @@ if [[ "$unamestr" == 'Linux' ]]; then
 
   # Install scikit-learn
   sudo apt-get install build-essential \
-   gfortran \
-   python-pip \
-   libopenblas-dev \
-   liblapack-dev \
-   libatlas-dev \
-   libatlas3gf-base \
-   python-dev \
-   python-setuptools \
-
-  pip install numpy \
-   scipy \
-   scikit-learn
+    gfortran \
+    python-pip \
+    libopenblas-dev \
+    liblapack-dev \
+    libatlas-dev \
+    libatlas3gf-base \
+    python-dev \
+    python-setuptools
 
   sudo pip install -U numpy scipy scikit-learn
 elif [[ "$unamestr" == 'Darwin' ]]; then
