@@ -14,7 +14,8 @@ if [[ "$unamestr" == 'Linux' ]]; then
    libatlas3gf-base \
    python-dev \
    python-setuptools \
-   python-numpy \
+   
+  pip install python-numpy \
    python-scipy \
    python-sklearn
 
