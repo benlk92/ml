@@ -3,14 +3,20 @@ if [[ "$unamestr" == 'Linux' ]]; then
   # build for linux using lib
   echo 'Retrieving dependencies for Linux'
   sudo apt-get update
-  sudo apt-get install gfortran libopenblas-dev liblapack-dev
-  sudo update-alternatives --set libblas.so.3 \
-    /usr/lib/atlas-base/atlas/libblas.so.3
-  sudo update-alternatives --set liblapack.so.3 \
-    /usr/lib/atlas-base/atlas/liblapack.so.3
-  sudo apt-get install build-essential python-pip python-dev python-setuptools \
-   python-numpy python-scipy \
-   libatlas-dev libatlas3gf-base python-sklearn
+
+  # Install scikit-learn
+  sudo apt-get install build-essential \
+   gfortran \
+   python-pip \
+   libopenblas-dev \
+   liblapack-dev \
+   libatlas-dev \
+   libatlas3gf-base \
+   python-dev \
+   python-setuptools \
+   python-numpy \
+   python-scipy \
+   python-sklearn
 
   sudo pip install -U numpy scipy scikit-learn
 elif [[ "$unamestr" == 'Darwin' ]]; then
