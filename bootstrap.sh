@@ -6,7 +6,6 @@ if [[ "$unamestr" == 'Linux' ]]; then
 
   # Install scikit-learn
   sudo apt-get install build-essential \
-    gfortran \
     python-pip \
     libopenblas-dev \
     liblapack-dev \
