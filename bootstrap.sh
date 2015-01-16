@@ -2,6 +2,9 @@ unamestr=`uname`
 if [[ "$unamestr" == 'Linux' ]]; then
   # build for linux using lib
   echo 'Linux'
+  sudo apt-get install build-essential python-dev python-setuptools \
+   python-numpy python-scipy \
+   libatlas-dev libatlas3gf-base
 elif [[ "$unamestr" == 'Darwin' ]]; then
   echo 'Retrieving dependencies for Mac OSX'
 
