@@ -14,10 +14,10 @@ if [[ "$unamestr" == 'Linux' ]]; then
    libatlas3gf-base \
    python-dev \
    python-setuptools \
-   
-  pip install python-numpy \
-   python-scipy \
-   python-sklearn
+
+  pip install numpy \
+   scipy \
+   scikit-learn
 
   sudo pip install -U numpy scipy scikit-learn
 elif [[ "$unamestr" == 'Darwin' ]]; then
