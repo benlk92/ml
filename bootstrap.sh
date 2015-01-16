@@ -3,6 +3,10 @@ if [[ "$unamestr" == 'Linux' ]]; then
   # build for linux using lib
   echo 'Retrieving dependencies for Linux'
   sudo apt-get update
+  sudo update-alternatives --set libblas.so.3 \
+    /usr/lib/atlas-base/atlas/libblas.so.3
+  sudo update-alternatives --set liblapack.so.3 \
+    /usr/lib/atlas-base/atlas/liblapack.so.3
   sudo apt-get install build-essential python-pip python-dev python-setuptools \
    python-numpy python-scipy \
    libatlas-dev libatlas3gf-base python-sklearn
