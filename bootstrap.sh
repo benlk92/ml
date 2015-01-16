@@ -3,6 +3,7 @@ if [[ "$unamestr" == 'Linux' ]]; then
   # build for linux using lib
   echo 'Retrieving dependencies for Linux'
   sudo apt-get update
+  sudo apt-get install gfortran libopenblas-dev liblapack-dev
   sudo update-alternatives --set libblas.so.3 \
     /usr/lib/atlas-base/atlas/libblas.so.3
   sudo update-alternatives --set liblapack.so.3 \
