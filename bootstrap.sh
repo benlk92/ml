@@ -14,4 +14,5 @@ if [[ "$unamestr" == 'Linux' ]]; then
   sudo pip install -U scikit-learn
 elif [[ "$unamestr" == 'Darwin' ]]; then
   echo 'Retrieving dependencies for Mac OSX'
+  pip install -U numpy scipy scikit-learn
 fi
