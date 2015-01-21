@@ -10,6 +10,7 @@ if [[ "$unamestr" == 'Linux' ]]; then
     python-dev \
     python-numpy \
     python-scipy \
+    python-pydot
     
   sudo pip install -U scikit-learn
 elif [[ "$unamestr" == 'Darwin' ]]; then
