@@ -90,13 +90,3 @@ class HeartDiseaseParser():
             'data': data[:,0:-1],
             'target': data[:,-1]
         }
-
-
-
-
-
-
-
-
-
-

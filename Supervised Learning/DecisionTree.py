@@ -55,9 +55,3 @@ if __name__ == '__main__':
     heart_disease_parser = HeartDiseaseParser('cleve.mod')
     heart_disease_decision_tree = DecisionTree(heart_disease_parser)
     heart_disease_decision_tree.test(.1)
-
-
-
-
-
-
